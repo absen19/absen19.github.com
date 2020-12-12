@@ -2,8 +2,9 @@
    
     margin: 0;
     padding: 0;
-  
+    box-sizing: border-box;
    
+
 }
 .container{
     width: 80%;
@@ -30,11 +31,13 @@ nav h1, span{
     color: #000000;
 }
 button{
-    width: auto;
+    background-image: linear-gradient( to right bottom, #FF20F5, #F8ACB2);
     height: 40px;
     padding: 10px;
+    cursor: pointer;
+    color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     box-sizing: border-box;
     font-size: medium;
     font-family: "Quicksand", sans-serif;
@@ -48,13 +51,14 @@ button{
 }
 section h2{
     font-family: "Quicksand",Arial, Helvetica, sans-serif;    
-    font-size: 47px;
+    font-size: 55px;
+}
+p, label{
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 20px; 
 }
 section p{
-    font-size: 24px; 
-    font-family: Arial, Helvetica, sans-serif;
-   
-    font-style: italic;
+    
     margin: 15px;
 }
 .hero{
@@ -67,3 +71,45 @@ section p{
     justify-content: space-between;
     align-items: flex-start;
 }
+
+.about-section h1, .contact-section h1{
+   font-size: 43px;
+   text-transform: uppercase; 
+   font-family:  "Quicksand", sans-serif;;
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+ 
+  input[type=submit] {
+    background-image: linear-gradient( to left bottom, #FF20F5, #F8ACB2);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+ 
+  input[type=submit]:hover {
+    background-image: linear-gradient( to right bottom, #FF20F5, #F8ACB2);  }
+  
